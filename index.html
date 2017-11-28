@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Transitions and Transforms</title>
+  </head>
+  <body>
+    <h1>Simple CSS Transitions</h1>
+    <section id="boring" class="container">
+      <h2>No Transition</h2>
+      <hr>
+      <div id="boring-hover" class="child-container">
+        <h3 class="example-title">.boring-hover</h3>
+        <a href="#boring" class="btn boring-hover">Hover Me!</a>
+        <p class="container-description">Hover the button to see animation.</p>
+      </div>
+      <hr>
+      <div id="boring-active" class="child-container">
+        <h3 class="example-title">.boring-active</h3>
+        <a href="#boring" class="btn boring-active">Keep Me Pressed!</a>
+        <p class="container-description">Click and hold the button to see animation.</p>
+      </div>
+      <hr>
+
+      <!-- CHANGE THIS BUTTON IN THE STYLE.CSS FILE -->
+      <div id="custom-boring" class="child-container">
+        <h3 class="example-title">.custom-boring</h3>
+        <a href="#boring" class="btn custom-boring">Make me change!</a>
+        <p class="container-description">
+          Change the style of .custom-boring in your CSS file.
+
+          Add a :hover pseudo class to make it change.
+        </p>
+      </div>
+      <!-- END OF YOUR CUSTOM BUTTON -->
+
+    </section>
+
+    <section id="cool" class="container">
+      <h2>With Transition Property</h2>
+      <hr>
+      <div id="cool-hover" class="child-container">
+        <h3 class="example-title">.cool-hover</h3>
+        <a href="#cool" class="btn cool-hover">Hover Me!</a>
+        <p class="container-description">Hover the button to see animation.</p>
+      </div>
+      <hr>
+      <div id="cool-active" class="child-container">
+        <h3 class="example-title">.cool-active</h3>
+        <a href="#cool" class="btn cool-active">Keep Me Pressed!</a>
+        <p class="container-description">Long click the button to see animation.</p>
+      </div>
+      <hr>
+
+      <!-- CHANGE THIS BUTTON IN THE STYLE.CSS FILE -->
+      <div id="custom-cool-hover" class="child-container">
+        <h3 class="example-title">.custom-cool-hover</h3>
+        <a href="#cool" class="btn custom-cool-hover">Hover Me!</a>
+        <p class="container-description">
+          Change the style of .custom-cool-hover in your CSS file.
+
+          Add a transition Property to make it change smoothly.
+        </p>
+      </div>
+      <!-- END OF YOUR CUSTOM BUTTON -->
+
+    </section>
+
+    <hr class="big-hr">
+    <h1>CSS Transforms</h1>
+    <section id="boring-transform" class="container">
+      <h2><u>Non-Animated</u> Transforms</h2>
+      <hr>
+      <div class="child-container">
+        <h3 class="example-title">rotate(30deg)</h3>
+        <div class="polaroid">
+          <img src="blonde.jpg" class="rotate-basic">
+        </div>
+        <p class="container-description">Simple rotated image by 30 degrees.</p>
+      </div>
+      <hr>
+      <div class="child-container">
+        <h3 class="example-title">translate</h3>
+        <div class="polaroid">
+          <img src="bon-iver.jpg" class="translate-basic">
+        </div>
+        <p class="container-description">Simple translate image in X & Y direction.</p>
+      </div>
+      <hr>
+      <div class="child-container">
+        <h3 class="example-title">scale(0.5)</h3>
+        <div class="polaroid">
+          <img src="jcole.jpg" class="scale-basic">
+        </div>
+        <p class="container-description">Image has been scaled to 0.5 its original size.</p>
+      </div>
+      <hr>
+
+      <!-- YOUR CUSTOM TRANSFORM GOES HERE. -->
+      <div class="child-container">
+        <h3 class="example-title">Try it yourself</h3>
+        <div class="polaroid">
+          <img src="http://fillmurray.com/300/300" class="custom-transform-basic">
+        </div>
+        <p class="container-description">
+          Change the style of .custom-transform-basic in your CSS file.
+        </p>
+      </div>
+      <!-- END OF YOUR CUSTOM TRANSFORM. -->
+
+    </section>
+
+    <section id="buggy-transform" class="container">
+      <h2><u>Buggy</u> Tranformations</h2>
+      <hr>
+      <div class="child-container">
+        <h3 class="example-title">rotate(30deg)</h3>
+        <div class="polaroid">
+          <img src="blonde.jpg" class="rotate-buggy">
+        </div>
+        <p class="container-description">Hover over the image on the bottom right corner.</p>
+      </div>
+      <hr>
+      <div class="child-container">
+        <h3 class="example-title">translateX(45px) translateY(-50px)</h3>
+        <div class="polaroid">
+          <img src="bon-iver.jpg" class="translate-buggy">
+        </div>
+        <p class="container-description">Hover over the image on the bottom left corner.</p>
+      </div>
+      <hr>
+      <div class="child-container">
+        <h3 class="example-title">scale(0.5)</h3>
+        <div class="polaroid">
+          <img src="jcole.jpg" class="scale-buggy">
+        </div>
+        <p class="container-description">Hover over the image close to the edges.</p>
+      </div>
+    </section>
+
+    <section id="cool-transform" class="container">
+      <h2>Tranformations <u>With</u> Transitions</h2>
+      <hr>
+      <div class="child-container">
+        <h3 class="example-title">Smooth rotate(30deg)</h3>
+        <div class="polaroid rotate-parent">
+          <img src="blonde.jpg" class="rotate-cool">
+        </div>
+        <p class="container-description">Hover over anywhere within the pink box.</p>
+      </div>
+      <hr>
+      <div class="child-container">
+        <h3 class="example-title">translate(45px, -50px)</h3>
+        <div class="polaroid translate-parent">
+          <img src="bon-iver.jpg" class="translate-cool">
+        </div>
+        <p class="container-description">Hover over anywhere within the pink box.</p>
+      </div>
+      <hr>
+      <div class="child-container">
+        <h3 class="example-title">scale(0.5)</h3>
+        <div class="polaroid scale-parent">
+          <img src="jcole.jpg" class="scale-cool">
+        </div>
+        <p class="container-description">Hover anywhere within the pink box.</p>
+      </div>
+    </section>
+
+  </body>
+</html>

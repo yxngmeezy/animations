@@ -1,0 +1,229 @@
+/** style.css **/
+
+/* Color List */
+/*turquoise: #1abc9c
+peter-river: #3498db
+amethyst: #9b59b6
+sunflower: #f1c40f
+carrot: #e67e22
+pumpkin: #d35400
+alizarin: #e74c3c*/
+
+/* Google Font: Josefin Sans. */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  padding: 2em 1em 4em 1em;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #ecf0f1;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 2em;
+}
+
+hr {
+  background-color: #bdc3c7;
+  height: 1px;
+  width: 80%;
+  border: 0;
+}
+
+.big-hr {
+  margin: 4em auto;
+}
+
+/** Styling for elements holding examples. */
+.container {
+  background-color: #FFF;
+  max-width: 500px;
+  padding: 1em 0;
+  margin: 3em auto;
+  border: 1px solid #95a5a6;
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container > h2 {
+  color: #34495e;
+}
+
+.child-container {
+  margin: 0 auto;
+  padding: 0.5em 1em;
+}
+
+.container-description {
+  opacity: 0;
+  font-weight: 400;
+  margin: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+/* On hover, show the description of the example. */
+.child-container:hover .container-description {
+  opacity: 0.8;
+}
+
+.example-title {
+  margin: 1em 0;
+  color: #34495e;
+  font-weight: 300;
+}
+
+/* General style for ALL my buttons. */
+.btn {
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #FFF;
+  display: block;
+  margin: 1em auto 2em;
+  color: #FFF;
+  text-decoration: none;
+}
+
+/** SIMPLE CSS TRANSITION SECTION!!! */
+
+/** NO TRANSITION SECTION! **/
+/* Boring green button. */
+.boring-hover {
+  background-color: #1abc9c;
+}
+.boring-hover:hover {
+  background-color: #16a085;
+}
+
+/* Boring orange button.*/
+.boring-active {
+  background-color: #e67e22;
+}
+.boring-active:active {
+  background-color: #d35400;
+}
+
+/** FILL IN YOUR CODE HERE **/
+.custom-boring {
+  background-color: #DDD;
+}
+/* add the :hover pseudo class. */
+}
+.custom-boring:hover {
+  color:deeppink;
+}
+/** END OF YOUR CODE HERE. **/
+
+
+/** TRANSITION SECTION! **/
+/* Cool blue button. */
+.cool-hover {
+  background-color: #3498db;
+    opacity:0.5;
+    transition: all 500ms ease-in-out;
+    -webkit-transition:all 500ms ease-in-out;
+    -moz-transition:all 500ms ease-in-out;
+    -o-transition:all 500ms ease-in-out;
+}
+.cool-hover:hover {
+    opacity:1;
+  background-color: #000;
+}
+
+/* Cool red button.*/
+.cool-active {
+  background-color: #e74c3c;
+}
+.cool-active:active {
+  background-color: #c0392b;
+}
+
+/** FILL IN YOUR CODE HERE **/
+.custom-cool-hover {
+  background-color: #9b59b6;
+  /* add the transition property here. */
+}
+.custom-cool-hover:hover {
+  /* Change any property here! */
+}
+/** END OF YOUR CODE HERE. **/
+
+
+
+/** TRANSFORMATION SECTION!!! **/
+.polaroid {
+  border: 3px solid lightcoral;
+  margin-bottom: 1em;
+  max-width: 300px;
+  margin: 4em auto;
+}
+.polaroid img {
+  max-width: 100%;
+  display: block;
+}
+
+/** BASIC NONHOVER TRANSFORM **/
+.rotate-basic {
+    transform:rotate(30deg);
+}
+.translate-basic {
+    transform:translate(50px,20px);
+}
+.scale-basic {
+    transform:scale(0.75);
+}
+/** FILL IN YOUR CODE HERE **/
+.custom-transform-basic {
+  /* add the transform property here. */
+}
+/** END OF YOUR CODE HERE. **/
+
+
+/** BUGGY SECTION **/
+.rotate-buggy {
+    transition:transform 300ms
+}
+.rotate-buggy:hover {
+    transform:rotate(30deg);
+}
+
+.translate-buggy {
+}
+.translate-buggy:hover {
+}
+
+.scale-buggy {
+}
+.scale-buggy:hover {
+}
+
+
+/** NONBUGGY TRANSFORMATIONS WITH TRANSITIONS **/
+.rotate-cool {
+    transition:transform 500ms ease-in-out;
+}
+.rotate-parent:hover .rotate-cool {
+    transform:rotate(30deg);
+}
+
+.translate-cool {
+    transition:transform 300ms ease-in-out;
+}
+.translate-parent:hover .translate-cool {
+    transform:translate(-10px,10px);
+}
+
+.scale-cool {
+    transition:transform 500ms ease-in-out;
+}
+.scale-parent:hover .scale-cool {
+    transform:scale(1.9)
+}
